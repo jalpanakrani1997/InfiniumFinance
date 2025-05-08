@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
     .animate-float {
         animation: float 3s ease-in-out infinite;
     }
-
     @keyframes float {
 
         0%,
@@ -22,22 +19,18 @@
     }
 }
 
-
 .pattern-dots {
     height: fit-content;
     background-image: radial-gradient(rgba(10, 61, 63, 0.1) 2px, transparent 0px);
     background-size: 20px 20px;
 }
-
 .pattern-diagonal {
     background: linear-gradient(135deg, rgba(10, 61, 63, .03) 25%, transparent 0) -10px 0, linear-gradient(225deg, rgba(10, 61, 63, .03) 25%, transparent 0) -10px 0, linear-gradient(315deg, rgba(10, 61, 63, .03) 25%, transparent 0), linear-gradient(45deg, rgba(10, 61, 63, .03) 25%, transparent 0);
     background-size: 20px 20px;
 }
-
 .foot-bg {
     background-color: goldenrod;
 }
-
 .bg-gray-50 {
     --tw-bg-opacity: 1;
     background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
@@ -45,4 +38,45 @@
 .pattern-grid {
     background-image: linear-gradient(rgba(10, 61, 63, .05) 1px, transparent 0), linear-gradient(90deg, rgba(10, 61, 63, .05) 1px, transparent 0);
     background-size: 20px 20px;
+}
+
+/* .rotate-xy {
+    transform: rotateX(45deg) rotateY(45deg);
+} */
+
+.rotate-x {
+    transform: rotateX(45deg);
+    animation: rotateInfine 3s infinite;
+}
+
+@keyframes rotateInfine {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(80deg) rotateY(80deg);
+    }
+}
+
+.rotate-xy {
+    animation: rotateInfinite 3s infinite;
+}
+
+@keyframes rotateInfinite {
+    0% {
+        transform: rotateX(80deg) rotateY(80deg);
+    }
+
+    50% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+
+.animate__animated.animate__flipInX {
+    --animate-duration: 2s;
+
 }

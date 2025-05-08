@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import 'animate.css';
 
 const Hero = () => {
   const [animate, setAnimate] = useState(true);
@@ -74,18 +75,20 @@ const Hero = () => {
                 <div className="ml-auto">
 
                   <div className="flex items-center justify-center h-20">
-                    <div className="relative w-[80px] h-full overflow-hidden group">
+                    <div className="relative w-[70px] h-[70px] overflow-hidden group">
 
                       <div
                         className={`absolute top-0 right-1/2 h-full bg-[#c99d2ed5] origin-right ${animate ? 'animate-centerin' : 'animate-centerout'
                           }`}
                       />
-
                       {showRupee && (
-                        <div className="absolute inset-0 flex items-center justify-center z-10">
-                          <p className="text-[#0c4244] text-2xl font-semibold">₹</p>
+                        <div className=" absolute inset-0 flex items-center justify-center z-10">
+                          <div className='rotate-xy absolute h-7 w-7 top-4 left-4 rounded-full bg-white/30 font-bold text-white'>
+                          </div>
+                          <p className="text-[#0c4244] text-2xl font-semibold animate__animated animate__flipInX animate__infinite	">₹</p>
                         </div>
                       )}
+
                       <div
                         className={`absolute top-0 left-1/2 h-full bg-[#c99d2ed5] origin-left ${animate ? 'animate-centerin' : 'animate-centerout'
                           }`}

@@ -1,32 +1,31 @@
-import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#003b3b] text-white -mt-12 pt-16 pb-6">
-            <div className="container mx-auto px-4">
+        <footer className="bg-[#0c4244] text-white -mt-12 pt-16 pb-6">
+            <div className=" container-fluid px-4 mr-20 ml-20 ">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12  ">
                     <div>
                         <h3 className='text-2xl font-bold mb-6 flex items-center'>
-                            <div className='foot-bg bg-bold bg-gold text-white p-1 rounded mr-2 transform rotate-12'>
+                            <div className='foot-bg bg-bold bg-[#b4891d] text-white p-1 rounded mr-2 transform rotate-12'>
                                 <span className='text-sm font-bold my-2'>IFS</span>
                             </div>
                             Infinium Finance <br /> Solutions
                         </h3>
-                        <p className="text-white-100 text-xl mt-4 mb-4">
+                        <p className="text-white-100 text-lg mt-4 mb-4">
                             A forward-thinking investment solutions company dedicated to offering secure, structured, and profitable financial growth plans.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-yellow-400 transition-colors">
+                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-[#c89b28] transition-colors">
                                 <Facebook size={20} />
                             </a>
-                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-yellow-400 transition-colors">
+                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-[#c89b28] transition-colors">
                                 <Twitter size={20} />
                             </a>
-                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-yellow-400 transition-colors">
+                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-[#c89b28] transition-colors">
                                 <Instagram size={20} />
                             </a>
-                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-yellow-400 transition-colors">
+                            <a href="#" className=" p-3 rounded-full bg-white/10 hover:text-[#c89b28] transition-colors">
                                 <Linkedin size={20} />
                             </a>
                         </div>
@@ -34,9 +33,9 @@ const Footer = () => {
 
                     <div>
                         <h3 className="text-2xl font-bold mb-6 border-b border-white/10 pb-2 ">Quick Links</h3>
-                        <ul className="space-y-3 text-lg">
+                        <ul className="space-y-3 text-md ">
                             {[
-                                { label: "Home", href: "#" },
+                                { label: "Home", href: "#"  },
                                 { label: "About Us", href: "#" },
                                 { label: "Investment Plans", href: "#" },
                                 { label: "How It Works", href: "#" },
@@ -44,11 +43,11 @@ const Footer = () => {
                             ].map((link, index) => (
                                 <li
                                     key={index}
-                                    className="flex items-center transform transition-transform hover:translate-x-2 "
+                                    className="flex items-center transform transition-transform hover:translate-x-2 hover:text-[#b4891d]"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="lucide lucide-arrow-right mr-2 h-4 w-4 text-yellow-500"
+                                        className="lucide lucide-arrow-right mr-2 h-4 w-4 text-[#b4891d]"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -65,7 +64,7 @@ const Footer = () => {
 
                     <div>
                         <h3 className="text-2xl font-bold mb-6 border-b border-white/10 pb-2">Legal</h3>
-                        <ul className="space-y-3 text-lg ">
+                        <ul className="space-y-3 text-md ">
                             {[
                                 { label: "Terms & Conditions", href: "#" },
                                 { label: "Privacy Policy", href: "#" },
@@ -78,7 +77,7 @@ const Footer = () => {
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="lucide lucide-arrow-right mr-2 h-4 w-4 text-yellow-500"
+                                        className="lucide lucide-arrow-right mr-2 h-4 w-4 text-[#b4891d]"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -94,24 +93,24 @@ const Footer = () => {
 
                     <div>
                         <h3 className="text-2xl font-bold mb-6 border-b border-white/10 pb-2">Contact Us</h3>
-                        <ul className="space-y-4 text-lg">
+                        <ul className="space-y-4 text-md">
                             <li className="flex items-start">
-                                <MapPin size={16} className="mr-2 mt-1 text-yellow-400" />
+                                <MapPin size={16} className="mr-2 mt-1 text-[#b4891d]" />
                                 Infinium Finance Solutions<br />
                                 123 Financial District<br />
                                 Ahmedabad, Gujarat<br />
                                 India
                             </li>
                             <li className="flex items-center">
-                                <Phone size={16} className="mr-2 text-yellow-400" />
+                                <Phone size={16} className="mr-2 text-[#b4891d]" />
                                 +91 1234567890
                             </li>
                             <li className="flex items-center">
-                                <Mail size={16} className="mr-2 text-yellow-400" />
+                                <Mail size={16} className="mr-2 text-[#b4891d]" />
                                 info@infiniumsolutions.com
                             </li>
                             <li className="flex items-center">
-                                <Clock size={16} className="mr-2 text-yellow-400" />
+                                <Clock size={16} className="mr-2 text-[#b4891d]" />
                                 Mon-Fri: 9:00 AM - 6:00 PM
                             </li>
                         </ul>
@@ -135,7 +134,7 @@ const Footer = () => {
 const FooterLink = ({ href, label }) => (
     <a
         href={href}
-        className="text-white-100 hover:text-yellow-400 transition-colors flex items-center"
+        className="text-white-100 hover:hover:text-[#b4891d] transition-colors flex items-center"
     >
         {label}
     </a>

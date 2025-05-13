@@ -2,8 +2,8 @@ import { ArrowRight } from "lucide-react";
 
 function NewsletterFooter() {
     return (
-        <div className="bg-[#003b3b] py-8 px-4">
-            <section className="bg-[#073c3c] py-10 px-4 text-center">
+        <div className="bg-[#0c4244] py-8 px-4 ">
+            <section className="bg-[#0c4244] py-10 px-4 text-center">
                 <div className="max-w-4xl mx-auto">
                     <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Ready to Secure Your Financial Future?
@@ -12,7 +12,7 @@ function NewsletterFooter() {
                         Start your investment journey with Infinium Finance today and experience the power of our quarterly compounding model.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <button className="h-12 bg-yellow-600 hover:bg-yellow-700 transition-all text-white px-10 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
+                        <button className="h-12 bg-[#c89b28] hover:bg-[#b4891d] transition-all text-white px-10 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
                             Invest Now
                         </button>
                         <button className="h-12 bg-white text-black border-2 border-white hover:bg-white/10 hover:text-white transition-all duration-300 px-10 py-2 rounded-md font-medium">
@@ -32,7 +32,7 @@ function NewsletterFooter() {
                     <h2 className="text-2xl font-bold text-white mb-2">
                         Subscribe to Our Newsletter
                     </h2>
-                    <p className="text-gray-300 text-xl">
+                    <p className="text-gray-300 text-lg">
                         Stay updated with our latest investment opportunities and financial insights.
                     </p>
                 </div>
@@ -43,7 +43,7 @@ function NewsletterFooter() {
                         placeholder="Enter your email"
                         className="flex h-10 w-full lg:w-[500px] rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/10 border-white/20 text-white placeholder:text-white/50"
                     />
-                    <button className="flex h-10 items-center justify-center gap-2 bg-[#c89b28] hover:bg-[#b78c1f] text-white font-semibold px-6 py-3 rounded-md transition-all">
+                    <button className="flex h-10 items-center justify-center gap-2 bg-[#c89b28] hover:bg-[#b4891d] text-white font-semibold px-6 py-3 rounded-md transition-all">
                         Subscribe
                         <ArrowRight size={18} />
                     </button>

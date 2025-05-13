@@ -24,11 +24,10 @@ const InvestPlans = () => {
 
     return (
         <section className="py-16  bg-[#fbf9f4] pattern-waves	">
-            <div className="container mx-auto px-4 ">
+            <div className=" container-fluid px-4 mr-20 ml-20  ">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-teal-900 mb-4">What Our Investors Say</h2>
                 </div>
-
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {testimonials.map((testimonial, index) => (
@@ -36,7 +35,7 @@ const InvestPlans = () => {
                             key={index}
                             className="flex flex-col h-full bg-white border border-black rounded-lg shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
                         >
-                            <div className="flex flex-col items-center text-center p-6 flex-grow">
+                            <div className="flex flex-col items-center text-center p-5 flex-grow">
                                 <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
                                     <img
                                         src={testimonial.img}
@@ -44,9 +43,9 @@ const InvestPlans = () => {
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                                <p className="font-bold text-xl">{testimonial.name}</p>
-                                <p className="text-gray-500 text-lg mb-1">{testimonial.position}</p>
-                                <p className="text-gray-600 mt-4 text-xl">{testimonial.content}</p>
+                                <p className="font-bold text-lg">{testimonial.name}</p>
+                                <p className="text-gray-500 text-md mb-1">{testimonial.position}</p>
+                                <p className="text-gray-600 mt-4 text-lg">{testimonial.content}</p>
                             </div>
                         </div>
                     ))}

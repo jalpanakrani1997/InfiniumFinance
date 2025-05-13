@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Shield, LineChart, Users } from "lucide-react";
 
 function Features() {
@@ -22,19 +20,19 @@ function Features() {
     ];
 
     return (
-        <div className="pattern-dots bg-gradient-to-br from-gray-50 to-gray-100 py-16">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#0c4244] mb-4">
+        <div className=" pattern-dots bg-gradient-to-br from-gray-50 to-gray-100 py-16">
+            <div className=" container-fluid  mx-auto ">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#0c4244] ">
                         Why Choose Infinium Finance
                     </h2>
-                 </div>
+                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-9xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mr-20 ml-20">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="relative group border-t-4 border-[#0c4244] border border-black/90 bg-white p-8 rounded-xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-transform duration-500 overflow-hidden flex flex-col items-center justify-center text-center hover:-translate-y-3"
+                            className="relative group border-t-4 border-[#0c4244] border border-[#0c4244] bg-white p-4 rounded-xl hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-transform duration-500 overflow-hidden flex flex-col items-center justify-center text-center hover:-translate-y-3"
                         >
                             {/* Gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-gray-500/20 opacity-0 group-hover:opacity-100 transition-all duration-700 -translate-x-full group-hover:translate-x-0 z-0"></div>
